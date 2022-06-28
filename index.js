@@ -327,7 +327,7 @@ module.exports = {
                                                 sourceCode: sourceCode,
                                                 node: node,
                                                 wrap: function (code) {
-                                                    return "".concat(code, " != null");
+                                                    return "".concat(code, " !== null && ".concat(code, " !== undefined"));
                                                 }
                                             })
                                         },
