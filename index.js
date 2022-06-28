@@ -56,7 +56,7 @@ module.exports = {
                     conditionFixDefaultZero: 'Explicitly treat nullish value the same as 0 (`value ?? 0`)',
                     conditionFixCompareNullish: 'Change condition to check for null/undefined (`value != null`)',
                     conditionFixCastBoolean: 'Explicitly cast value to a boolean (`Boolean(value)`)',
-                    conditionFixCompareZero: 'Change condition to check for 0 (`value !== 0`)',
+                    conditionFixCompareZero: 'Change condition to check for undefined and null (`value !== undefined && value !== null`)',
                     conditionFixCompareNaN: 'Change condition to check for NaN (`!Number.isNaN(value)`)'
                 }
             },
